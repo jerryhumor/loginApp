@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<litepal>
+    <dbname value="student"></dbname>
+
+    <version value="1"></version>
+
+    <list>
+        <mapping class="com.hdu.chenpengfei.loginapp.Student"></mapping>
+        <mapping class="com.hdu.chenpengfei.loginapp.Landscape"></mapping>
+    </list>
+</litepal>

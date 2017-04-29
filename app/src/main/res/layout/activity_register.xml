@@ -1,0 +1,259 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_register"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.hdu.chenpengfei.loginapp.RegisterActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/register_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/colorPrimary"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/register_toolbar">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <RelativeLayout
+                    android:id="@+id/register_layout_school_number"
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+                    android:layout_centerHorizontal="true"
+                    android:padding="10dp">
+
+                    <TextView
+                        android:id="@+id/register_label_school_number"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="学    号:"
+                        android:textSize="20sp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_centerVertical="true"/>
+
+                    <EditText
+                        android:id="@+id/register_edit_school_number"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_toRightOf="@+id/register_label_school_number"
+                        />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/register_layout_password"
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_below="@+id/register_layout_school_number"
+                    android:padding="10dp">
+
+                    <TextView
+                        android:id="@+id/register_label_password"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="密    码:"
+                        android:textSize="20sp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_centerVertical="true"/>
+
+                    <EditText
+                        android:id="@+id/register_edit_password"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:inputType="textPassword"
+                        android:layout_marginRight="20dp"
+                        android:layout_toRightOf="@+id/register_label_password"
+                        />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/register_layout_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_below="@+id/register_layout_password"
+                    android:padding="10dp">
+
+                    <TextView
+                        android:id="@+id/register_label_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="姓    名:"
+                        android:textSize="20sp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_centerVertical="true"/>
+
+                    <EditText
+                        android:id="@+id/register_edit_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_toRightOf="@+id/register_label_name"
+                        />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/register_layout_birthday"
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_below="@+id/register_layout_name"
+                    android:padding="10dp">
+
+                    <TextView
+                        android:id="@+id/register_label_birthday"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="出生日期:"
+                        android:textSize="20sp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_centerVertical="true"/>
+
+                    <ImageButton
+                        android:id="@+id/register_img_btn_birthday"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="20dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/calendar"/>
+
+                    <TextView
+                        android:id="@+id/register_edit_birthday"
+                        android:layout_width="140dp"
+                        android:layout_height="50dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_toLeftOf="@+id/register_img_btn_birthday"
+                        />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/register_layout_sex"
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_below="@+id/register_layout_birthday"
+                    android:padding="10dp">
+
+                    <TextView
+                        android:id="@+id/register_label_sex"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:textSize="20sp"
+                        android:layout_marginLeft="20dp"
+                        android:text="性    别:"/>
+
+                    <RadioGroup
+                        android:id="@+id/register_rg_sex"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal"
+                        android:layout_toRightOf="@+id/register_label_sex">
+
+                        <RadioButton
+                            android:id="@+id/register_rb_man"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:text="男"
+                            android:checked="true"/>
+
+                        <RadioButton
+                            android:id="@+id/register_rb_woman"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:text="女"/>
+                    </RadioGroup>
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/register_layout_college"
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_below="@+id/register_layout_sex"
+                    android:padding="10dp">
+
+                    <TextView
+                        android:id="@+id/register_label_college"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="学    院:"
+                        android:textSize="20sp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_centerVertical="true"/>
+
+                    <ImageButton
+                        android:id="@+id/register_img_btn_college"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="20dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/school"/>
+
+                    <TextView
+                        android:id="@+id/register_edit_college"
+                        android:layout_width="140dp"
+                        android:layout_height="50dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_toLeftOf="@+id/register_img_btn_college"
+                        />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/register_layout_class_number"
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_below="@id/register_layout_college"
+                    android:padding="10dp">
+
+                    <TextView
+                        android:id="@+id/register_label_class_number"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="班 级 号:"
+                        android:textSize="20sp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_centerVertical="true"/>
+
+                    <EditText
+                        android:id="@+id/register_edit_class_number"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_toRightOf="@+id/register_label_class_number"
+                        />
+                </RelativeLayout>
+
+                <Button
+                    android:id="@+id/register_btn_register"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/register_layout_class_number"
+                    android:layout_marginRight="30dp"
+                    android:layout_marginLeft="30dp"
+                    android:text="注册"/>
+
+
+            </RelativeLayout>
+
+
+        </ScrollView>
+
+    </RelativeLayout>
+
+</RelativeLayout>

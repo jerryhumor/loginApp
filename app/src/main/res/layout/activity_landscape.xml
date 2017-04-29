@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_landscape"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.hdu.chenpengfei.loginapp.LandscapeActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/landscape_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/colorPrimary"/>
+
+    <ImageView
+        android:id="@+id/img_landscape"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/landscape_toolbar"
+        android:layout_marginTop="30dp"/>
+
+    <TextView
+        android:id="@+id/tv_introduce"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/img_landscape"
+        android:layout_marginTop="20dp"
+        android:textSize="15sp"/>
+
+</RelativeLayout>

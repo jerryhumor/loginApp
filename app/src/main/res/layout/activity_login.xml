@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_login"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.hdu.chenpengfei.loginapp.LoginActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/login_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/colorPrimary"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_below="@+id/login_toolbar">
+
+        <RelativeLayout
+        android:id="@+id/login_layout_school_number"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_centerHorizontal="true"
+        android:padding="10dp">
+
+        <TextView
+            android:id="@+id/login_label_school_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="学    号:"
+            android:textSize="20sp"
+            android:layout_marginLeft="20dp"
+            android:layout_centerVertical="true"/>
+
+        <EditText
+            android:id="@+id/login_edit_school_number"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginRight="20dp"
+            android:layout_toRightOf="@+id/login_label_school_number"
+            />
+        </RelativeLayout>
+
+        <RelativeLayout
+        android:id="@+id/login_layout_password"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/login_layout_school_number"
+        android:padding="10dp">
+
+        <TextView
+            android:id="@+id/login_label_password"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="密    码:"
+            android:textSize="20sp"
+            android:layout_marginLeft="20dp"
+            android:layout_centerVertical="true"/>
+
+        <EditText
+            android:id="@+id/login_edit_password"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:inputType="textPassword"
+            android:layout_marginRight="20dp"
+            android:layout_toRightOf="@+id/login_label_password"
+            />
+        </RelativeLayout>
+
+        <LinearLayout
+        android:id="@+id/login_layout_button"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_below="@+id/login_layout_password"
+        android:padding="10dp">
+
+        <Button
+            android:id="@+id/login_btn_login"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="10dp"
+            android:text="登录"/>
+
+        <Button
+            android:id="@+id/login_btn_register"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="20dp"
+            android:text="注册"/>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>
